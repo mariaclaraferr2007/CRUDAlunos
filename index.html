@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Prática JavaScript</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+      <div class="containers">
+        <section class="container">
+          <h1>Cadastrar Aluno</h1>
+          <form action="/" class="formularioCadastro" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" class="nome" name="nome" />
+            <label for="institucao">Instituição</label>
+            <input type="text" class="instituicao" name="instituicao" />
+            <label for="curso">Curso</label>
+            <input type="text" class="curso" name="curso" />
+            <button type="submit" id="enviar">Enviar</button>
+          </form>
+
+
+
+          <div class="resultadoCadastro"></div>
+        </section>
+
+        <section class="container">
+          <h1>Buscar Aluno</h1>
+          <form action="/" class="formularioBusca" method="POST">
+            <label for="nome">Digite o nome do aluno</label>
+            <input type="text" class="nomeBusca" name="nome" />
+            <button type="submit" id="enviar">Buscar</button>
+          </form>
+
+          <div class="resultadoBusca"></div>
+        </section>
+
+        <section class="container">
+          <h1>Deletar Aluno</h1>
+          <form action="/" class="formularioDeletar" method="POST">
+            <label for="nome">Digite o nome do aluno</label>
+            <input type="text" class="nomeDeletar" name="nome" />
+            <button type="submit" id="enviar">Deletar</button>
+          </form>
+
+          <div class="resultadoDeletar"></div>
+        </section>
+
+        <section class="container">
+          <h1>Alterar Aluno</h1>
+          <form action="/" class="formularioAlterar" method="POST">
+            <label for="nome">Digite o nome do aluno que deseja alterar</label>
+            <input type="text" class="alunoAlterar" name="nome" />
+            <label for="nome">Digite o novo nome do aluno</label>
+            <input type="text" class="nomeAlterar" name="nome" />
+            <label for="institucao">Digite a nova instituição</label>
+            <input type="text" class="instituicaoAlterar" name="instituicao" />
+            <label for="curso">Digite o novo curso</label>
+            <input type="text" class="cursoAlterar" name="curso" />
+            <button type="submit" id="enviar">Alterar</button>
+          </form>
+
+          <div class="resultadoAlterar"></div>
+        </section>
+      </div>
+
+      <script src="./script.js"></script>
+    </body>
+</html>

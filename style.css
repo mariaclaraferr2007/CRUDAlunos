@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+body button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  height: 36px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 14px;
+  flex-wrap: nowrap;
+  padding: 14px;
+  min-height: 60vh;
+  box-sizing: border-box;
+}
+
+.container {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 260px;
+  margin: 0;
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.container h1 {
+  font-size: 1em;
+  margin: 0 0 6px 0;
+}
+
+form input,
+form label,
+form button{
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+form label {
+  font-size: 0.8em;
+  margin-bottom: 2px;
+}
+
+form input {
+  font-size: 13px;
+  height: 26px;
+  padding: 0 8px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+@media (max-width: 900px) {
+  .containers {
+    flex-wrap: wrap;
+  }
+  .container {
+    flex: 1 1 calc(50% - 14px);
+    max-width: none;
+  }
+}
+
+.paragrafo-resultado,
+.bad {
+  background: rgb(109, 255, 182);
+  padding: 10px 20px;
+}
+
+.bad {
+  background: rgb(255, 150, 150);
+}
